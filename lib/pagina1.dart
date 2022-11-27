@@ -17,19 +17,29 @@ class Pagina1 extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
         children: [
           Column(
-            children: const [
+            children: [
               ListTile(
-                leading: Icon(Icons.account_balance_wallet_rounded),
-                title: Text('esto es un texto DE DATOS'),
+                leading: const Icon(Icons.account_balance_wallet_rounded),
+                title: const Text('esto es un texto DE DATOS'),
                 subtitle: Text(
                     'Es un texto para que te des cuenta de que se programar'),
               ),
               ListTile(
-                leading: Icon(Icons.account_balance_wallet_rounded),
-                title: Text('esto es un texto DE DATOS'),
-                subtitle: Text(
+                leading: const Icon(Icons.account_balance_wallet_rounded),
+                title: const Text('esto es un texto DE DATOS'),
+                subtitle: const Text(
                     'Es un texto para que te des cuenta de que se programar'),
               ),
+              Row(
+                children: const [
+                  Expanded(
+                    child: ElevatedButton(onPressed: null, child: Text('hola')),
+                  ),
+                  Expanded(
+                    child: ElevatedButton(onPressed: null, child: Text('hola')),
+                  )
+                ],
+              )
             ],
           )
         ],
